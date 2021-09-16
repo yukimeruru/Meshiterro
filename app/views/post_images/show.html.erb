@@ -7,7 +7,6 @@
   <% if @post_image.user == current_user %>
     <%= link_to "削除", post_image_path(@post_image), method: :delete %>
   <% end %>
-
 </div>
 
 <div>
@@ -21,8 +20,8 @@
     <%= link_to "削除", post_image_post_comment_path(post_comment.post_image, post_comment), method: :delete %>
   </div>
   <% end %>
-
 <% end %>
+
 </div>
 <div>
 <%= form_with(model:[@post_image, @post_comment], local: true) do |f| %>
